@@ -1,0 +1,13 @@
+1488792782717	geckodriver	INFO	Listening on 127.0.0.1:55878
+1488792784729	mozprofile::profile	INFO	Using profile path C:\Users\lvshr\AppData\Local\Temp\rust_mozprofile.d2inLYSZTpid
+1488792784734	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1488792784796	geckodriver::marionette	INFO	Connecting to Marionette on localhost:55886
+1488792785953	Marionette	INFO	Listening on port 55886
+[Child 18340] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+[NPAPI 21016] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+d/recv
+
+
+###!!! [Child][OnMaybeDequeueOne] Error: Channel error: cannot send/recv
+
+[Child 16440] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
