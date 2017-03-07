@@ -35,7 +35,7 @@ class TestClass():
  arr2 = 2
 
  def setUp(self):
-     self.arr1 = 1
+     self.arr1 = 3
      self.arr2 = 3
      print "MyTestClass setup"
 
@@ -46,4 +46,4 @@ class TestClass():
      assert self.arr1 == self.arr2
 
  def Testfunc2(self):
-     assert self.arr1 == 1
+     assert self.arr1 == 3
