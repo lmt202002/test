@@ -1,13 +1,14 @@
-1488961089608	geckodriver	INFO	Listening on 127.0.0.1:52479
-1488961091635	mozprofile::profile	INFO	Using profile path C:\Users\lvshr\AppData\Local\Temp\rust_mozprofile.MQcJY4qYSQd1
-1488961091647	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
-1488961091749	geckodriver::marionette	INFO	Connecting to Marionette on localhost:52486
-1488961093191	Marionette	INFO	Listening on port 52486
-[Child 14972] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
-[NPAPI 3388] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1488961973674	geckodriver	INFO	Listening on 127.0.0.1:53136
+1488961975693	mozprofile::profile	INFO	Using profile path C:\Users\lvshr\AppData\Local\Temp\rust_mozprofile.OZHo0a8v8Fy1
+1488961975701	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1488961975785	geckodriver::marionette	INFO	Connecting to Marionette on localhost:53143
+1488961977101	Marionette	INFO	Listening on port 53143
+[Child 5620] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+[NPAPI 14624] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+ipc/glue/MessageChannel.cpp, line 2056
+[NPAPI 14640] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
 
-chrome/common/ipc_channel_win.cc, line 513
-[Child 1892] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+6
 [NPAPI 13728] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
 0/build/src/ipc/glue/BackgroundChildImpl.cpp:143
 mmon/ipc_channel_win.cc, line 346

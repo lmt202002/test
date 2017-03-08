@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80a69a6f-e7e5-47e9-83ba-fdafc4908043" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testcase/test3.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mylibs/ecm.py" afterPath="$PROJECT_DIR$/mylibs/ecm.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testcase/geckodriver.log" afterPath="$PROJECT_DIR$/testcase/geckodriver.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testcase/test3.py" afterPath="$PROJECT_DIR$/testcase/test3.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testcase/testlog2.py" afterPath="$PROJECT_DIR$/testcase/testlog2.py" />
     </list>
     <ignored path="test.iws" />
@@ -20,7 +19,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/test$Nosetests_in_testlog2.coverage" NAME="Nosetests in testlog2 Coverage Results" MODIFIED="1488961054709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/test$Nosetests_in_testlog2.coverage" NAME="Nosetests in testlog2 Coverage Results" MODIFIED="1488961961416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/test$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1488957565329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/test$Nosetest_TestClass_Testfunc1.coverage" NAME="Nosetest TestClass.Testfunc1 Coverage Results" MODIFIED="1488854674917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/test$Nosetests_in_TestClass.coverage" NAME="Nosetests in TestClass Coverage Results" MODIFIED="1488854796301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
@@ -53,11 +52,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="testlog2.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="testlog2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testcase/testlog2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.36">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
               <folding>
                 <element signature="e#21#41#0" expanded="true" />
               </folding>
@@ -69,8 +68,10 @@
         <entry file="file://$PROJECT_DIR$/testcase/test3.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+              <folding>
+                <element signature="e#13#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ecm.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ecm.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mylibs/ecm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding>
                 <element signature="e#14#39#0" expanded="true" />
               </folding>
@@ -133,9 +134,9 @@
         <option value="$PROJECT_DIR$/.idea/main.py" />
         <option value="$PROJECT_DIR$/testcase/testLoginMobile.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/mylibs/ecm.py" />
         <option value="$PROJECT_DIR$/testcase/test3.py" />
         <option value="$PROJECT_DIR$/testcase/testlog2.py" />
-        <option value="$PROJECT_DIR$/mylibs/ecm.py" />
       </list>
     </option>
   </component>
@@ -601,28 +602,16 @@
       <option name="project" value="LOCAL" />
       <updated>1488952105686</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="更新代码">
+      <created>1488961201597</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1488961201597</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetests_in_testlog2 - 2017.03.08 at 11h 44m 48s.xml">
-      <configuration name="Nosetests in testlog2" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_testlog2 - 2017.03.08 at 11h 45m 28s.xml">
-      <configuration name="Nosetests in testlog2" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_testlog2 - 2017.03.08 at 11h 46m 17s.xml">
-      <configuration name="Nosetests in testlog2" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_testlog2 - 2017.03.08 at 11h 46m 23s.xml">
-      <configuration name="Nosetests in testlog2" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_testlog2 - 2017.03.08 at 11h 47m 07s.xml">
-      <configuration name="Nosetests in testlog2" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_testlog2 - 2017.03.08 at 11h 48m 14s.xml">
-      <configuration name="Nosetests in testlog2" configurationId="tests" />
-    </history-entry>
     <history-entry file="Nosetests_in_testlog2 - 2017.03.08 at 15h 06m 29s.xml">
       <configuration name="Nosetests in testlog2" configurationId="tests" />
     </history-entry>
@@ -633,6 +622,24 @@
       <configuration name="Nosetests in testlog2" configurationId="tests" />
     </history-entry>
     <history-entry file="Nosetests_in_testlog2 - 2017.03.08 at 16h 18m 20s.xml">
+      <configuration name="Nosetests in testlog2" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_testlog2 - 2017.03.08 at 16h 22m 04s.xml">
+      <configuration name="Nosetests in testlog2" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_testlog2 - 2017.03.08 at 16h 22m 51s.xml">
+      <configuration name="Nosetests in testlog2" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_testlog2 - 2017.03.08 at 16h 24m 33s.xml">
+      <configuration name="Nosetests in testlog2" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_testlog2 - 2017.03.08 at 16h 26m 03s.xml">
+      <configuration name="Nosetests in testlog2" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_testlog2 - 2017.03.08 at 16h 31m 06s.xml">
+      <configuration name="Nosetests in testlog2" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_testlog2 - 2017.03.08 at 16h 33m 04s.xml">
       <configuration name="Nosetests in testlog2" configurationId="tests" />
     </history-entry>
   </component>
@@ -651,15 +658,15 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25738126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="版本控制" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3261745" sideWeight="0.4948652" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="版本控制" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3261745" sideWeight="0.49229783" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.49743262" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3261745" sideWeight="0.50513476" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3261745" sideWeight="0.5077022" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.49229783" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.48973042" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -858,30 +865,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mylibs/ecm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="e#14#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testcase/test3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="e#13#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testcase/testlog2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.36">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding>
             <element signature="e#21#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mylibs/ecm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <element signature="e#14#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
