@@ -1,9 +1,26 @@
 #coding=utf-8
 from PIL import ImageGrab
-import csv,codecs
+import csv,codecs,os,datetime,time,HTMLTestRunner
 class ECMlibs(object):
     def __init__(self, BsObject):
         self.BsObject = BsObject
+#打印报告
+    def PrintResult(self,resultdir,testunit):
+        now=time.strftime("%Y-%m-%d-%H_%M_%S",time.localtime(time.time()))
+        self.filename=resultdir+'\\'+now+'result.html'
+        fp=file(self.filename,'wb')
+        runner=HTMLTestRunner.HTMLTestRunner(stream=fp,title=u'XXX测试报告',description=u'用例执行情况：')
+        runner.run(testunit)
+#获取目录下最新的文件
+    def CatchNewFile(self,result_dir):
+        self.result_dir = result_dir
+        self.lists=os.listdir(self.result_dir)
+        self.lists.sort(key=lambda fn: os.path.getmtime(self.result_dir+"\\"+fn) if not
+        os.path.isdir(self.result_dir+"\\"+fn) else 0)
+        print (u'最新的文件为： '+self.lists[-1])
+        self.file = os.path.join(self.result_dir,self.lists[-1])
+        print self.file
+        return self.file
 #登录手机端
     def LoginM(self,domain,usrname,usrpwd):
         try:
