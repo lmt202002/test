@@ -1,8 +1,10 @@
-1489045199570	geckodriver	INFO	Listening on 127.0.0.1:57550
-1489045201599	mozprofile::profile	INFO	Using profile path C:\Users\lvshr\AppData\Local\Temp\rust_mozprofile.lFwAh2MfuYt5
-1489045201602	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
-1489045201663	geckodriver::marionette	INFO	Connecting to Marionette on localhost:57557
-JavaScript error: resource://gre/components/SanityTest.js, line 287: NS_ERROR_FILE_ACCESS_DENIED: Component returned failure code: 0x80520015 (NS_ERROR_FILE_ACCESS_DENIED) [nsIPrefService.savePrefFile]
-1489045203203	Marionette	INFO	Listening on port 57557
-[Child 14860] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
-[NPAPI 15120] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1489049311613	geckodriver	INFO	Listening on 127.0.0.1:61134
+1489049313636	mozprofile::profile	INFO	Using profile path C:\Users\lvshr\AppData\Local\Temp\rust_mozprofile.XI4im2LNtoaY
+1489049313643	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe
+1489049313831	geckodriver::marionette	INFO	Connecting to Marionette on localhost:61145
+1489049315267	Marionette	INFO	Listening on port 61145
+[Child 12880] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+[NPAPI 15076] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+ipc/glue/MessageChannel.cpp, line 2056
+[NPAPI 3580] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+

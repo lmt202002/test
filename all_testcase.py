@@ -1,6 +1,11 @@
 #coding=utf8
-import os,sys,unittest,CatchResultAndSendMail
+import os
+import sys
+import unittest
+
+import CatchResultAndSendMail
 from mylibs.ecm import ECMlibs
+
 #设置测试用例目录，测试test开头用例
 testcaselist=unittest.defaultTestLoader.discover(os.getcwd()+'\\testcase',pattern='test*.py',top_level_dir=None)
 #创建测试套件

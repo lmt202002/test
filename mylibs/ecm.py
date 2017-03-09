@@ -1,10 +1,19 @@
 #coding=utf-8
-from PIL import ImageGrab
-import csv,codecs,os,datetime,time,HTMLTestRunner,smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-from email.mime.image import MIMEImage
+import codecs
+import csv
+import datetime
+import HTMLTestRunner
+import os
+import smtplib
+import time
 from email.header import Header
+from email.mime.image import MIMEImage
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
+from PIL import ImageGrab
+
+
 class ECMlibs(object):
     def __init__(self, BsObject):
         self.BsObject = BsObject
@@ -32,7 +41,7 @@ class ECMlibs(object):
         smtp.login('bruceloo@aliyun.com','lmtlsl73')
         smtp.sendmail(mail_from,mail_to,msg.as_string())
         smtp.quit()
-        print '邮件发送成功!'
+        print u'邮件发送成功!'
 #打印报告
     def SaveResult(self,resultdir,testunit):
         now=time.strftime("%Y-%m-%d-%H_%M_%S",time.localtime(time.time()))
