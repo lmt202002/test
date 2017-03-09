@@ -32,7 +32,7 @@ class ECMlibs(object):
         smtp.login('bruceloo@aliyun.com','lmtlsl73')
         smtp.sendmail(mail_from,mail_to,msg.as_string())
         smtp.quit()
-        print 'email has send out !'
+        print '邮件发送成功!'
 #打印报告
     def SaveResult(self,resultdir,testunit):
         now=time.strftime("%Y-%m-%d-%H_%M_%S",time.localtime(time.time()))
