@@ -1,8 +1,12 @@
 #coding=utf-8
-from selenium import webdriver
-from mylibs.ecm import ECMlibs
+import time
 import unittest
-import time,os,HTMLTestRunner
+
+from selenium import webdriver
+
+from mylibs.ecm import ECMlibs
+
+
 #确定测试的服务器域名
 class testlist(unittest.TestCase):
 #初始化

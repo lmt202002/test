@@ -1,15 +1,41 @@
 #coding=utf-8
 from PIL import ImageGrab
-import csv,codecs,os,datetime,time,HTMLTestRunner
+import csv,codecs,os,datetime,time,HTMLTestRunner,smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email.mime.image import MIMEImage
 class ECMlibs(object):
     def __init__(self, BsObject):
         self.BsObject = BsObject
+#发邮件
+    def SentMail(self,file_new):
+    #发信邮箱
+        mail_from='bruceloo@aliyun.com'
+        #收信邮箱
+        mail_to='bruceloo@aliyun.com'
+        #定义正文
+        f = open(file_new, 'rb')
+        mail_body = f.read()
+        f.close()
+        msg=MIMEText(mail_body,_subtype='html',_charset='utf-8')
+        #定义标题
+        msg['Subject']=u"云智测试报告"
+        #定义发送时间（不定义的可能有的邮件客户端会不显示发送时间）
+        msg['date']=time.strftime('%a, %d %b %Y %H:%M:%S %z')
+        smtp=smtplib.SMTP()
+        #连接 SMTP 服务器，此处用的126的 SMTP 服务器
+        smtp.connect('smtp.aliyun.com')
+        #用户名密码
+        smtp.login('bruceloo@aliyun.com','lmtlsl73')
+        smtp.sendmail(mail_from,mail_to,msg.as_string())
+        smtp.quit()
+        print 'email has send out !'
 #打印报告
-    def PrintResult(self,resultdir,testunit):
+    def SaveResult(self,resultdir,testunit):
         now=time.strftime("%Y-%m-%d-%H_%M_%S",time.localtime(time.time()))
         self.filename=resultdir+'\\'+now+'result.html'
         fp=file(self.filename,'wb')
-        runner=HTMLTestRunner.HTMLTestRunner(stream=fp,title=u'XXX测试报告',description=u'用例执行情况：')
+        runner=HTMLTestRunner.HTMLTestRunner(stream=fp,title=u'云智测试报告',description=u'用例执行情况：')
         runner.run(testunit)
 #获取目录下最新的文件
     def CatchNewFile(self,result_dir):

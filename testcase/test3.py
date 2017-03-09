@@ -1,7 +1,10 @@
 #coding=utf8
-from mylibs.ecm import ECMlibs
-import unittest,time
+import time
+import unittest
+
 from selenium import webdriver
+
+
 class testCase(unittest.TestCase):
     def setUp(self):
         self.s='abc'
