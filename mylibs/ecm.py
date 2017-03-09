@@ -4,6 +4,7 @@ import csv,codecs,os,datetime,time,HTMLTestRunner,smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.image import MIMEImage
+from email.header import Header
 class ECMlibs(object):
     def __init__(self, BsObject):
         self.BsObject = BsObject
@@ -12,13 +13,15 @@ class ECMlibs(object):
     #发信邮箱
         mail_from='bruceloo@aliyun.com'
         #收信邮箱
-        mail_to='bruceloo@aliyun.com'
+        mail_to='bruceloo@aliyun.com;bruceloo@aliyun.com;'
         #定义正文
         f = open(file_new, 'rb')
         mail_body = f.read()
         f.close()
         msg=MIMEText(mail_body,_subtype='html',_charset='utf-8')
         #定义标题
+        msg['from']=mail_from
+        msg['to']=mail_to
         msg['Subject']=u"云智测试报告"
         #定义发送时间（不定义的可能有的邮件客户端会不显示发送时间）
         msg['date']=time.strftime('%a, %d %b %Y %H:%M:%S %z')
