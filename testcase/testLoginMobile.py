@@ -21,11 +21,14 @@ class testlist(unittest.TestCase):
         # time.sleep(2)
 #用例列表
     def test64(self):
+        u'''登录测试'''
         LoginM1=ECMlibs(self.browser)
-        LoginM1.LoginM(self.URL,self.username,self.userpwd)
-        time.sleep(5)
-        LoginM1.Logout(self.tid)
-        time.sleep(2)
+        try:
+            LoginM1.LoginM(self.URL,self.username,self.userpwd)
+            time.sleep(5)
+            LoginM1.Logout(self.tid)
+            time.sleep(2)
+        except:
 #结束处理
     def tearDown(self):
         self.browser.quit()

@@ -3,7 +3,6 @@ import os,sys,unittest,CatchResultAndSendMail
 from mylibs.ecm import ECMlibs
 #设置测试用例目录，测试test开头用例
 testcaselist=unittest.defaultTestLoader.discover(os.getcwd()+'\\testcase',pattern='test*.py',top_level_dir=None)
-print(testcaselist)
 #创建测试套件
 testunit=unittest.TestSuite()
 #循环读取用例目录中的用例
