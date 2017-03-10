@@ -17,7 +17,7 @@ class testlist(unittest.TestCase):
         #确定用户名密码
         self.username=13211110001
         self.userpwd=1
-        self.browser=webdriver.Firefox()
+        self.browser=webdriver.Chrome()
         # time.sleep(2)
 #用例列表
     def test64(self):
