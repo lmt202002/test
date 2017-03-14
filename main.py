@@ -1,3 +1,9 @@
 #coding=utf8
-import CatchResultAndSendMail
-CatchResultAndSendMail.SendResult()
+from multiprocessing import Process
+
+def test(name):
+    print 'hello',name
+if __name__=='__main__':
+    p=Process(target=test,args=('lvshr',))
+    p.start()
+    p.join()

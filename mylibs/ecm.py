@@ -10,13 +10,17 @@ from email.header import Header
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-
+from mylibs import location
 from PIL import ImageGrab
 
 
 class ECMlibs(object):
     def __init__(self, BsObject):
         self.BsObject = BsObject
+        self.me=location
+#截图并按用例函数名和时间命名
+    def Screenshot(self,testname=''):
+        self.BsObject.get_screenshot_as_file(os.getcwd()+'\\screenshot\\'+testname+ time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'.jpg')
 #发邮件
     def SentMail(self,file_new):
     #发信邮箱
@@ -63,9 +67,9 @@ class ECMlibs(object):
     def LoginM(self,domain,usrname,usrpwd):
         try:
             self.BsObject.get("http://"+domain+"/m/login?weixinAutoLogin=false")
-            self.BsObject.find_element_by_id("J_LoginUser").send_keys(str(usrname))
-            self.BsObject.find_element_by_id("J_LoginPsw").send_keys(str(usrpwd))
-            self.BsObject.find_element_by_id("J_LoginBtn").click()
+            self.me.findId(self.BsObject,"J_LoginUser").send_keys(str(usrname))
+            self.me.findId(self.BsObject,"J_LoginPsw").send_keys(str(usrpwd))
+            self.me.findId(self.BsObject,"J_LoginBtn").click()
             #raise
         except:
             im = ImageGrab.grab()
@@ -75,9 +79,9 @@ class ECMlibs(object):
     def LoginP(self,domain,usrname,usrpwd):
         try:
             self.BsObject.get("http://"+domain+"/login.html?successUrl=%2F")
-            self.BsObject.find_element_by_name("j_username").send_keys(str(usrname))
-            self.BsObject.find_element_by_name("j_password").send_keys(str(usrpwd))
-            self.BsObject.find_element_by_id("loginBtn").click()
+            self.me.findName(self.BsObject,"j_username").send_keys(str(usrname))
+            self.me.findName(self.BsObject,"j_password").send_keys(str(usrpwd))
+            self.me.findId(self.BsObject,"loginBtn").click()
         except:
             im = ImageGrab.grab()
             im.save('d:\\Login.jpg','jpeg')

@@ -1,7 +1,6 @@
 #coding=utf-8
 import time
-import unittest
-
+import unittest,os
 from selenium import webdriver
 
 from mylibs.ecm import ECMlibs
@@ -20,15 +19,16 @@ class testlist(unittest.TestCase):
         self.browser=webdriver.Chrome()
         # time.sleep(2)
 #用例列表
-    def test64(self):
+    def test64(self,testname='test64'):
         u'''登录测试'''
-        LoginM1=ECMlibs(self.browser)
+        lib1=ECMlibs(self.browser)
         try:
-            LoginM1.LoginM(self.URL,self.username,self.userpwd)
+            lib1.LoginM(self.URL,self.username,self.userpwd)
             time.sleep(5)
-            LoginM1.Logout(self.tid)
+            lib1.Logout(self.tid1)
             time.sleep(2)
         except:
+            lib1.Screenshot(testname)
 #结束处理
     def tearDown(self):
         self.browser.quit()
